@@ -1,0 +1,133 @@
+/********************************  basic layout  ********************************/
+
+body {
+  margin: 0px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #8d0b3b;
+  font-family: 'Oxygen', sans-serif;
+  margin-bottom: 10px;
+}
+/*******************************   nav bar   ***********************************/
+#header-nav{
+  background-color: yellow;
+  border: 0;
+  border-radius: 0;
+  padding: 15px;
+}
+
+#header-nav a:hover,#header-nav a:focus{
+  text-decoration: none;
+}
+
+#header-nav h1{
+  font-size: 2em;
+  text-transform: uppercase;
+  color: rgb(64, 94, 3);
+  text-shadow: 1px 1px 1px rgb(92, 92, 92);
+  display: inline;
+}
+
+/**********  button for mobile  ***************/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border: 1px solid #61122f;
+  box-shadow: 1px 1px 2px black;
+}
+
+.navbar-header button.navbar-toggle{
+  clear: both;
+}
+
+#nav-list{
+  margin-top: 10px;
+}
+
+#nav-list a{
+  color: #951c49;
+  text-align: center;
+}
+
+#nav-list a:hover{
+  background-color: #e7e7e7;
+}
+
+#nav-list a span{
+  font-size: 1.8em;
+}
+
+/************** mani-content ****************/
+#main-content{
+  margin: 10px;
+}
+
+#main-content h1{
+  font-size: 1.8em;
+  text-transform: uppercase;
+  color: rgb(210, 162, 30);
+  text-shadow: 2px 2px 2px black;
+}
+#main-content div{
+  margin-top: 10px;
+  border: 2px double black;
+  background-color: darkturquoise;
+  padding: 5px;
+}
+
+#main-content h2{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  min-height:  100px;
+  color: black;
+  text-shadow: 2px 2px 2px black; 
+}
+
+/* goto top */
+#main-content a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+#main-content a:hover,#main-content a:focus{
+  background-color: black;
+  
+}
+/******************** media *******************/
+
+/**********************  large device  ***********************/
+@media (min-width: 992px){
+  #col-xs-12,#col-xs-12,#col-xs-12{
+    float: center;
+    width: 100%;    
+  }
+
+  #col-xs-12, #col-xs-12{
+    margin-right:33% ;
+  }
+
+}
+
+/********************** tablet device ***********************/
+@media (min-width: 768px) and (max-width: 991px){
+  #main-content div{
+    float: left;
+  }
+  
+  #col-xs-12, #col-xs-12{
+    width: 49.5%;
+  }
+
+  #col-xs-12{
+    margin-right: 1%;
+  }
+  #col-xs-12{
+    width: 100%;
+  }
+
+}
+
+/********************* ex-small device *********************/
+@media (max-width: 766px){
+
+}
